@@ -1,16 +1,3 @@
 # cse2102lab1
 
-Prerequisites You Need in Order to Run the Code:
-
-Ensure you have the Java Development Kit (JDK) installed (version 1.8 or later).
-
-Install Maven if you haven't already.
-Clone the Repository: Clone this repository to your local machine and navigate into the project directory. Compile the Project: Run the command: mvn compile
-Run the Application: After compiling, run the application using:
-
-" mvn exec:java -Dexec.mainClass="com.example.App" " Run the Tests: To run the unit tests and verify that everything works, use:
-mvn clean test
-
-This is the correct Folder Structure you need in order to run this:
-
-src/main/java: Contains the main application code. src/test/java: Contains unit tests for the application.
+This Java program compares how different types of vehicles—like hybrid, gasoline, and electric—use fuel. It defines rules for each type of vehicle and tests the hybrid vehicle to make sure it works correctly. The main code is in the src/main/java folder, with important files like App.java (the program’s starting point), CarRunner.java (which compares vehicle efficiencies), ElectricInterface.java (for electric vehicle rules), GasolineInterface.java (for gasoline vehicle rules), Hybrid.java (for hybrid-specific features), and HybridVehicle.java (which combines electric and gasoline features into a hybrid). The tests are in the src/test/java folder, including AppTest.java (to check the whole program) and HybridTest.java (to test the hybrid vehicle). To build and run the project, clone the repository, then use mvn compile to compile the code and mvn clean test to run the tests.
